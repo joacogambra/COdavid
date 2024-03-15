@@ -1,0 +1,29 @@
+a{
+    position: relative;
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: rgba(202, 202, 99, 0.879);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+.nv{
+    padding-bottom: 60px;
+}
