@@ -40,14 +40,18 @@ React;
         <div className="cont-form">
             <form className="form" onSubmit={newUser} ref={form} action="#">
                 <p className="title">Register</p>
-                <p className="message">Signup now and get full access to our app. </p>
-                <input className="input" type="text" placeholder="name" required="" ref={name}/>
-                <input className="input" type="number" placeholder="age" required="" ref={age}/>
-                <input className="input" type="email" placeholder="mail" required="" ref={mail}/>
-                <input className="input" type="text" placeholder="country" required="" ref={country}/>            
-                <input className="input" type="password" placeholder="contraseña" required="" ref={contraseña}/> 
-                <input type="submit" className="submit" value='Registrar' />        
-                <p className="signin">Already have an acount ? <a href="#">Signin</a> </p>
+                <p className="message">Regístrese y obtenga acceso completo </p>
+
+                <input type="text" autoComplete="off" name="name" className="new-input" placeholder="Name"required="" ref={name}/>
+                <input type="number" autoComplete="off" name="age" className="new-input" placeholder="Age" required="" ref={age}/>
+                {/* <input type="date" autoComplete="off" name="age" className="new-input" placeholder="Age" required="" ref={age}/> */}
+                <input type="email" autoComplete="off" name="mail" className="new-input" placeholder="Email" required=""ref={mail}/>
+                <input type="text" autoComplete="off" name="country" className="new-input" placeholder="Country" required=""ref={country}/>
+                <input type="password" autoComplete="off" name="contraseña" className="new-input" placeholder="Password" required=""ref={contraseña}/>
+
+                <input type="submit" className="submit" value='Registrar' />  
+
+                <p className="signin">Ya tienes una cuenta? <a href="#">Ingresar</a> </p>
             </form>
         </div>
     );

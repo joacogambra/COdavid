@@ -1,13 +1,32 @@
 .cont-form{
   display: flex;
   justify-content: center;
-  padding-top: 80px;
+  /* padding-top: 40px; */
 }
+
+.new-input{
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  color: #303030;
+}
+
+.new-input:focus{
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 350px;
+  gap: 12px;
+  width: 420px;
   padding: 20px;
   border-radius: 20px;
   position: relative;
@@ -65,53 +84,13 @@
 
 .signin a {
   color: #00bfff;
+  text-decoration: none !important;
 }
 
 .flex {
   display: flex;
   width: 100%;
   gap: 6px;
-}
-
-.form label {
-  position: relative;
-}
-
-.form label .input {
-  background-color: #333;
-  color: #fff;
-  width: 100%;
-  padding: 20px 05px 05px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 10px;
-}
-
-.form label .input + span {
-  color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 10px;
-  top: 0px;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-
-.form label .input:placeholder-shown + span {
-  top: 12.5px;
-  font-size: 0.9em;
-}
-
-.form label .input:focus + span,
-.form label .input:valid + span {
-  color: #00bfff;
-  top: 0px;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-
-.input {
-  font-size: medium;
 }
 
 .submit {
@@ -123,6 +102,7 @@
   font-size: 16px;
   transform: .3s ease;
   background-color: #00bfff;
+  cursor: pointer;
 }
 
 .submit:hover {

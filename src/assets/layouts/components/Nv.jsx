@@ -11,13 +11,17 @@ export default function Nv() {
           <a href="#">Inicio</a>
         </LinkRouter>
 
-        <LinkRouter to={'/profile'}>
+        <LinkRouter to={'/cursos'}>
           <a href="#">Cursos</a>
         </LinkRouter>
 
         <a href="#">Membresia</a>
         <a href="#">Contacto</a>
-        <a href="#">Usuario</a>
+        
+
+        <LinkRouter to={'/register'}>
+          <a href="#">Usuario</a>
+        </LinkRouter>
 
       </nav>
       <img src="Cart.png" alt="user" className="cart" />
