@@ -42,7 +42,7 @@ export default function Rep() {
             </div>
 
             <div className="sld-img-active">
-                <img src="./dp2.jpg" alt="dp2" />
+                <img src="./cj.jpg" alt="dp2" />
                 <h3>Chris Juarez</h3>
                 <div className='dtls'>
                     <h5>Chris Juarez</h5>

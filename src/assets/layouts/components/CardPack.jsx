@@ -6,10 +6,9 @@ export default function CardPack() {
   return (
     <div className="pack-container">
       <div className="header">
-        <p className="title">Starter</p>
+        <p className="title">Analista</p>
         <div className="price-container">
-          <span>$</span>27
-          <span>/mo</span>
+          <span>$</span>99      
         </div>
       </div>
       <div>
@@ -31,7 +30,7 @@ export default function CardPack() {
                 ></path>
               </svg>
             </span>
-            <p>2 team members</p>
+            <p>2 horas de contenido</p>
           </li>
           <li className="list">
             <span>
@@ -50,7 +49,7 @@ export default function CardPack() {
                 ></path>
               </svg>
             </span>
-            <p>1000+ components</p>
+            <p>1000+ trucos</p>
           </li>
           <li className="list">
             <span>
@@ -69,7 +68,7 @@ export default function CardPack() {
                 ></path>
               </svg>
             </span>
-            <p>1 month free updates</p>
+            <p>Seguimiento 1 a 1</p>
           </li>
           <li className="list">
             <span>
@@ -88,12 +87,12 @@ export default function CardPack() {
                 ></path>
               </svg>
             </span>
-            <p>Life time technical support</p>
+            <p>Asistencia a tiempo real</p>
           </li>
         </ul>
       </div>
       <div className="button-container">
-        <button type="button">Buy Now</button>
+        <button type="button-buy">Buy Now</button>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ export default function Nv() {
         </LinkRouter>
 
       </nav>
-      <img src="Cart.png" alt="user" className="cart" />
+      <img src="tsl.png" alt="user" className="cart" />
     </div>
   );
 }

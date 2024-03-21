@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="footer">
         <div className="lg-networks">
-            <img src="Black.png" alt="fake logo" className="ftr-img"/>
+            {/* <img src="Black.png" alt="fake logo" className="ftr-img"/> */}
             <Networks></Networks>
         </div>
         <div className="ftr-text">

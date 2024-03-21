@@ -35,7 +35,7 @@
   border: 1px solid #333;
 }
 
-.title {
+.title-register {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -46,19 +46,19 @@
   color: #00bfff;
 }
 
-.title::before {
+.title-register::before {
   width: 18px;
   height: 18px;
 }
 
-.title::after {
+.title-register::after {
   width: 18px;
   height: 18px;
   animation: pulse 1s linear infinite;
 }
 
-.title::before,
-.title::after {
+.title-register::before,
+.title-register::after {
   position: absolute;
   content: "";
   height: 16px;

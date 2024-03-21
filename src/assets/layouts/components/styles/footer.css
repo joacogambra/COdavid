@@ -2,9 +2,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: rgb(36,36,36);
     padding: 60px 0px;
+    gap: 120px;
     /* background: linear-gradient(180deg, rgba(36,36,36,1)74%, rgba(0,0,0,1) 100%); */
 }
 
@@ -19,7 +20,7 @@
     padding-right: 10px;
     border-right: 1px solid whitesmoke;
     font-weight: 600;
-    color: rgb(198, 198, 81);
+    color:#00bfff;
     cursor: pointer;
 }
 

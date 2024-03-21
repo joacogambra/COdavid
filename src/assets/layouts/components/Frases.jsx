@@ -4,59 +4,63 @@ import { useState, useEffect } from 'react'
 export default function Frases() {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
-    const toRotate = ['La madurez llega cuando dejas de poner excusa', 
-    'Transforma los obstáculos en oportunidades', 
-    'No te preocupes por los errores y fracasos']
-    const [text, setText] = useState('')
+    const toRotate = ['La madurez llega cuando dejas de poner excusas"',
+        'Transforma los obstáculos en oportunidades"',
+        'No te preocupes por los errores y fracasos"']
+    const [text, setText] = useState('')    
     const [delta, setDelta] = useState(300 - Math.random() * 100)
     const period = 2000
 
-    useEffect(()=>{
-        let ticker = setInterval(()=>{
+    useEffect(() => {
+        let ticker = setInterval(() => {
             tick()
         }, delta)
 
-        return () => {clearInterval(ticker)};
+        return () => { clearInterval(ticker) };
     }, [text])
-   
+
     const tick = () => {
         let i = loopNum % toRotate.length
         let fullText = toRotate[i]
         let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
-        
+
         setText(updatedText)
 
-        if(isDeleting){
-            setDelta(prevDelta => prevDelta /2)
+        if (isDeleting) {
+            setDelta(prevDelta => prevDelta / 2)
         }
 
-        if(!isDeleting && updatedText === fullText){
+        if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true)
             setDelta(period)
-        } else if (isDeleting && updatedText === ''){
+        } else if (isDeleting && updatedText === '') {
             setIsDeleting(false)
             setLoopNum(loopNum + 1)
             setDelta(500)
         }
     }
 
-  return (
-    <div className='banner'>
-        <h1>Trade sin limites</h1>
-        <div className="container">
-            <div className="row">
-                <div className="col1">
-                    <h2>{`"`}<span className='wrap'>{text}</span>{`|`}</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis.</p>                 
-                </div>
+    return (
+        <div className='banner'>
+            <div className='title-w-coin'>
+                <h1>Trade Sin Limites</h1>
                 <div className="col2">
-                    <img src="./Coin2.png" alt="coin" className='coinimg'/>
+                    <img src="./Coin2.png" alt="coin" className='coinimg' />
                 </div>
             </div>
-        </div>      
-    </div>
 
-  )
+            <div className="container">
+                <div className="row">
+                    <div className="col1">
+                        <h2>{`"`}<span className='wrap'>{text}</span>{`|`}</h2>
+                        <p>T.S.L FINANCE SERVICE S.R.L</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    )
 }
 
 

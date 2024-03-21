@@ -39,7 +39,7 @@ React;
     return (
         <div className="cont-form">
             <form className="form" onSubmit={newUser} ref={form} action="#">
-                <p className="title">Register</p>
+                <p className="title-register">Regístrate</p>
                 <p className="message">Regístrese y obtenga acceso completo </p>
 
                 <input type="text" autoComplete="off" name="name" className="new-input" placeholder="Name"required="" ref={name}/>
